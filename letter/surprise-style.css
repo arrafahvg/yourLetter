@@ -3,11 +3,12 @@ body {
     margin: 20;
     padding: 20;
     background-color: #f0f0f0;
-    text-align: center;
+    text-align: justify;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .letter-container {
     width: 80%;
@@ -21,6 +22,7 @@ body {
 
 h2 {
     color: #4caf50;
+    text-align: center;
 }
 
 .greeting, .message, .closing, {
