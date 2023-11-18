@@ -45,7 +45,7 @@ input {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: orange;
     color: white;
     padding: 15px;
     border: none;
@@ -54,10 +54,10 @@ button {
 }
 
 footer {
-    background-color: #4caf50;
-    color: white;
-    padding-bottom:1%;
-    padding-top:1%; 
+    background-color: #ffa5009e;
+    color: rgb(241, 233, 233);
+    padding-bottom: 0.1px;
+    padding-top: 0.1px; 
 }
 
 /* Style the quotes container */
@@ -87,7 +87,7 @@ footer {
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
-    color: #4caf50;
+    color: orange;
   }
 
 /* Style the previous and next buttons */
@@ -128,7 +128,7 @@ footer {
   
   /* Change the background color of the buttons on hover */
   .previous:hover, .next:hover {
-    color:#4caf50;
+    color: orange;
   }
   
   
