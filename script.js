@@ -10,12 +10,12 @@ function bukaSurprise() {
 }
 
 const quotes = [
-  { text: "\"Hence (if you will not misunderstand me) the exquisite arbitrariness and irresponsibility of this love. I have no duty to be anyone's Friend and no man in the world has a duty to be mine. No claims, no shadow of necessity. Friendship is unnecessary, like philosophy, like art, like the universe itself (for God did not need to create). It has no survival value; rather it is one of those things which give value to survival.\"", name: "— C.S. Lewis" },
-  { text: "\"One friend with whom you have a lot in common is better than three with whom you struggle to find things to talk about. We never needed best friend gear because I guess with real friends you don't have to make it official. It just is.\"", name: "— Mindy Kaling" },
-  { text: "\"No friendship is an accident.\"", name: "— O. Henry" },
-  { text: "\"Your friends will know you better in the first minute you meet than your acquaintances will know you in a thousand years.\"", name: "— Richard Bach" },
-  { text: "\"True friends are never apart, maybe in distance but never in heart.\"", name: "— Unknown" },
-  { text: "\"There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves; it is not my nature.\"", name: "— Jane Austen" }
+  { text: "\"Hence (if you will not misunderstand me) the exquisite arbitrariness and irresponsibility of this love. I have no duty to be anyone's Friend and no man in the world has a duty to be mine. No claims, no shadow of necessity. Friendship is unnecessary, like philosophy, like art, like the universe itself (for God did not need to create). It has no survival value; rather it is one of those things which give value to survival.\"", name: "— C.S. Lewis —" },
+  { text: "\"One friend with whom you have a lot in common is better than three with whom you struggle to find things to talk about. We never needed best friend gear because I guess with real friends you don't have to make it official. It just is.\"", name: "— Mindy Kaling —" },
+  { text: "\"No friendship is an accident.\"", name: "— O. Henry —" },
+  { text: "\"Your friends will know you better in the first minute you meet than your acquaintances will know you in a thousand years.\"", name: "— Richard Bach —" },
+  { text: "\"True friends are never apart, maybe in distance but never in heart.\"", name: "— Unknown —" },
+  { text: "\"There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves; it is not my nature.\"", name: "— Jane Austen —" }
 ];
 
 let currentQuoteIndex = 0;

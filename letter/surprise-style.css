@@ -5,7 +5,7 @@ body {
     background-image: url('../image/backgroundAra.jpg');
     background-size:cover;
     background-position: center;
-    text-align: justify;
+    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,6 @@ h2 {
     align-items: center;
     justify-content: flex-end;
     padding: 4px 6px;
-    cursor: pointer;
 }
 
 .checkbox {
@@ -70,6 +69,7 @@ h2 {
     background: white;
     border-radius: 50%;
     transition: transform .2s;
+    cursor: pointer;
 }
 
 .checkbox:checked + .label {
