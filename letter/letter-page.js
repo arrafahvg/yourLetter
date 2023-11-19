@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const stopBtn = document.getElementById('stopBtn');
 
   // Set default volume to 50%
-  bgMusic.volume = 0.5;
+  bgMusic.volume = 0.25;
 
   playPauseBtn.addEventListener('click', function () {
       if (bgMusic.paused) {
