@@ -74,17 +74,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // music player
 // Get the audio element 
-var audio = new Audio('bgsound/bgsound1.mp3');
-
-function playMusic() {
-    audio.play();
-}
-
-function stopMusic() {
-    audio.pause();
-    audio.currentTime = 0;
-}
-
-function resumeMusic() {
-    audio.play();
-}
