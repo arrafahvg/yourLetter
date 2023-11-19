@@ -74,3 +74,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // music player
 // Get the audio element 
+document.addEventListener('DOMContentLoaded', function () {
+  const bgMusic = document.getElementById('bgMusic');
+  const playPauseBtn = document.getElementById('playPauseBtn');
+  const stopBtn = document.getElementById('stopBtn');
+
+  // Set default volume to 50%
+  bgMusic.volume = 0.5;
+
+  playPauseBtn.addEventListener('click', function () {
+      if (bgMusic.paused) {
+          bgMusic.play();
+          playPauseBtn.textContent = 'Pause';
+      } else {
+          bgMusic.pause();
+          playPauseBtn.textContent = 'Play';
+      }
+  });
+
+  stopBtn.addEventListener('click', function () {
+      bgMusic.currentTime = 0;
+      bgMusic.pause();
+      playPauseBtn.textContent = 'Play';
+  });
+});
+
