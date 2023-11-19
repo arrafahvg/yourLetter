@@ -40,7 +40,7 @@ function changeQuote() {
 
 window.onload = function () {
   changeQuote();
-  intervalID = setInterval(changeQuote, 30000); // Assign intervalID when setting the interval
+  intervalID = setInterval(changeQuote, 100000); // Assign intervalID when setting the interval
 };
 
 function changeSlide(n) {
