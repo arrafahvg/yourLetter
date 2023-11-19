@@ -26,8 +26,16 @@ function changeQuote() {
   const nameQuoteElement = document.querySelector(".nameQuotes");
   const currentQuote = quotes[currentQuoteIndex];
 
-  mainQuoteElement.textContent = currentQuote.text;
-  nameQuoteElement.textContent = currentQuote.name;
+  mainQuoteElement.style.opacity = 0;
+  nameQuoteElement.style.opacity = 0;
+
+  setTimeout(function() {
+    mainQuoteElement.textContent = currentQuote.text;
+    nameQuoteElement.textContent = currentQuote.name;
+
+    mainQuoteElement.style.opacity = 1;
+    nameQuoteElement.style.opacity = 1;
+  }, 500);
 }
 
 window.onload = function () {

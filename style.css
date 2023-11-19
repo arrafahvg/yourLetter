@@ -78,6 +78,10 @@ footer {
 }
   
   /* Style the main quote */
+  .mainQuotes, .nameQuotes {
+    transition: opacity 0.5s ease-in-out;
+  }  
+
   .mainQuotes {
     font-size: 24px;
     font-weight: lighter;
