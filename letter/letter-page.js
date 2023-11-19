@@ -50,18 +50,20 @@ setInterval(function() {
 
 // Letter button
 document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('#toggle');
+  const toggleTextLeft = document.querySelector('.toggle-text.left');
+  const toggleTextRight = document.querySelector('.toggle-text.right');
   const letterContainer = document.querySelector('.letter-container');
-  const button = document.querySelector('button');
 
-  let isBackgroundWhite = true;
-
-  button.addEventListener('click', function () {
-      if (isBackgroundWhite) {
+  toggle.addEventListener('change', function () {
+      if (toggle.checked) {
+          toggleTextLeft.style.display = 'block';
+          toggleTextRight.style.display = 'none';
           letterContainer.style.backgroundColor = '#ffffffab';
       } else {
+          toggleTextLeft.style.display = 'none';
+          toggleTextRight.style.display = 'block';
           letterContainer.style.backgroundColor = '#fff';
       }
-
-      isBackgroundWhite = !isBackgroundWhite;
   });
 });
