@@ -1,5 +1,5 @@
 
-  const startDate = new Date(2022, 9, 20, 12, 1);
+const startDate = new Date(2022, 9, 20, 12, 1);
 
 function getElapsedMonths(startDate, currentDate) {
   let elapsedMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
@@ -16,10 +16,10 @@ setInterval(function() {
 
   const elapsedYears = Math.floor(elapsedTime / 31536000000);
   const elapsedMonths = getElapsedMonths(startDate, currentDate) - elapsedYears * 12;
-  let elapsedDays = currentDate.getDate() - startDate.getDate(); // corrected line
-  if (elapsedDays <= 0) { // corrected line
-    elapsedDays += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate(); // corrected line
-  } // corrected line
+  let elapsedDays = currentDate.getDate() - startDate.getDate();
+  if (elapsedDays <= 0) {
+    elapsedDays += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+  }
   const elapsedHours = Math.floor(elapsedTime / 3600000) % 24;
   const elapsedMinutes = Math.floor(elapsedTime / 60000) % 60;
   const elapsedSeconds = Math.floor(elapsedTime / 1000) % 60;
@@ -37,16 +37,20 @@ setInterval(function() {
   let addedTimeUnits = 0;
 
   for (const unit of timeUnits) {
-    if (unit.value > 0) {
-      timerString += `<span style="color: blue;">${unit.value} ${unit.value > 1 ? unit.pluralLabel : unit.label}</span> `;
+    if (unit.value > 0 || (unit.label === "minute" || unit.label === "second")) {
+      let valueString = unit.value.toString();
+      if (unit.label === "minute" || unit.label === "second") {
+        valueString = valueString.padStart(2, '0');
+      }
+      timerString += `<span style="color: blue;">${valueString} ${unit.value !== 1 ? unit.pluralLabel : unit.label}</span> `;
       addedTimeUnits++;
     }
   }
 
-  // Remove trailing comma and space
-
   document.getElementById("timer").innerHTML = timerString;
 }, 1000);
+
+
 
 // Letter button
 document.addEventListener('DOMContentLoaded', function () {
