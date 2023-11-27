@@ -15,16 +15,16 @@ const quotes = [
   { text: "\"No friendship is an accident.\"", name: "— O. Henry —" },
   { text: "\"Your friends will know you better in the first minute you meet than your acquaintances will know you in a thousand years.\"", name: "— Richard Bach —" },
   { text: "\"True friends are never apart, maybe in distance but never in heart.\"", name: "— Unknown —" },
-  { text: "\"Friendship is always a sweet responsibility, never an opportunity.\"", name: "— Khalil gibran —"}
-  { text: "\"There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves; it is not my nature.\"", name: "— Jane Austen —" }
-  { text: "\"A friend is someone with whom you dare to be yourself.\"", name:"— Frank Crane —"}
-  { text: "\"Friendship marks a life even more deeply than love. Love risks degenerating into obsession, friendship is never anything but sharing.\"", name: "— Elie Wiesel —"}
-  { text: "\"I don't suppose you have many friends. Neither do I. I don't trust people who say they have a lot of friends. It's a sure sign that they don't really know anyone.\"", name:"— Carlos Ruiz Zafón —"}
-  { text: "\"Of all possessions a friend is the most precious.\"", name: "— Herodatus —"}
-  { text: "\"A friend is one who overlooks your broken fence and admires the flowers in your garden.\"", name: "— Unknown —"}
-  { text: "\"Many people will walk in and out of your life, but only true friends will leave footprints in your heart.\"", name: "— Eleanor —"}
-  { text: "\"The language of friendship is not words but meanings.\"", name: "— Henry David Thoreau —"}
-  { text: "\"The real test of friendship is: can you literally do nothing with the other person? Can you enjoy those moments of life that are utterly simple?\"", name: "— Eugene Kennedy —"}
+  { text: "\"Friendship is always a sweet responsibility, never an opportunity.\"", name: "— Khalil gibran —"},
+  { text: "\"There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves; it is not my nature.\"", name: "— Jane Austen —" },
+  { text: "\"A friend is someone with whom you dare to be yourself.\"", name:"— Frank Crane —"},
+  { text: "\"Friendship marks a life even more deeply than love. Love risks degenerating into obsession, friendship is never anything but sharing.\"", name: "— Elie Wiesel —"},
+  { text: "\"I don't suppose you have many friends. Neither do I. I don't trust people who say they have a lot of friends. It's a sure sign that they don't really know anyone.\"", name:"— Carlos Ruiz Zafón —"},
+  { text: "\"Of all possessions a friend is the most precious.\"", name: "— Herodatus —"},
+  { text: "\"A friend is one who overlooks your broken fence and admires the flowers in your garden.\"", name: "— Unknown —"},
+  { text: "\"Many people will walk in and out of your life, but only true friends will leave footprints in your heart.\"", name: "— Eleanor —"},
+  { text: "\"The language of friendship is not words but meanings.\"", name: "— Henry David Thoreau —"},
+  { text: "\"The real test of friendship is: can you literally do nothing with the other person? Can you enjoy those moments of life that are utterly simple?\"", name: "— Eugene Kennedy —"},
 ];
 
 let currentQuoteIndex = 0;
